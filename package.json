@@ -1,0 +1,28 @@
+{
+  "name": "PusherProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "npm install --only=dev && npm install && tsc && cd client && npm install --only=dev && npm install && npm run build",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/dotenv": "^4.0.3",
+    "crypto": "^1.0.1",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "pusher": "^2.0.0",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "@types/uuid": "^3.4.3",
+    "ts-node": "^6.0.3",
+    "typescript": "^2.8.3"
+  }
+}
